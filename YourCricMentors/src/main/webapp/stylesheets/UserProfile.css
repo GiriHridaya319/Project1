@@ -1,0 +1,146 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px; /* Add margin to separate content from sidebar */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        min-width: 200px;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+
+/* Add styles for the dropdown menu and date input */
+.select-wrapper {
+    margin-bottom: 15px;
+}
+
+.select-wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#dob {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+   
+    object-position: center; }
+    
+    
+    .input-container {
+        text-align: center;
+    }
+
+    /* Style the label for the image */
+    #image-label {
+        display: inline-block;
+        width: 100px; /* Adjust width as needed */
+        text-align: right; /* Align label text to the right */
+        margin-right: 10px; /* Add some space between label and input */
+    }
+
+    /* Style the file input element */
+    #image {
+        display: inline-block;
+    }
+    
+    

@@ -1,0 +1,281 @@
+@charset "ISO-8859-1";
+
+@charset "ISO-8859-1";
+
+:root {
+  --primary-color: #111317;
+  --secondary-color: #f9ac54;
+  --text-light: #d1d5db;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+/* Remaining styles remain unchanged */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a74c0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+
+}
+
+
+.button {
+  width: 200px;
+  height: 100px;
+  background: #007bff;
+  position: relative;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hover effect */
+.button:hover {
+  width: 300px;
+  border-radius: 8px;
+  background-color: #0056b3;
+  
+}
+
+
+
+.button:hover span {
+  display: none;
+}
+
+.button:hover::before {
+  display: block;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Add button */
+.button.add:hover::before {
+  content: "Add new test";
+}
+
+/* Delete button */
+
+/* Update button */
+
+
+
+
+.card:first-child {
+  grid-area: card1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.main {
+  grid-area: main;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.card {
+  padding: 40px;
+  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: transform 0.3s;
+  
+}
+
+.card0 {
+  padding: 40px;
+  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.card0:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* Add this CSS to the parent container */
+
+/* Apply the following CSS to the .overview_card */
+
+.animated-input {
+  margin-bottom: 10px; /* Add space between input and button */
+}
+
+.submit-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px; /* Add space between input and button */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Media Queries */
+
+
+
+
+@media only screen and (max-width: 749px) {
+  /* Adjusting grid layout for smaller screens */
+
+  /* Adjusting aside width for smaller screens */
+
+  /* Adjusting main card layout for smaller screens */
+
+  /* Hiding close icon for aside on smaller screens */
+
+  /* Adjusting header search margin for smaller screens */
+
+  /* Adjusting margin of profile image for smaller screens */
+
+  /* Adjusting margin of aside list for smaller screens */
+}
+
+@media only screen and (min-width: 750px) {
+  /* Adjusting grid layout for larger screens */
+
+  /* Adjusting main card layout for larger screens */
+
+  /* Showing close icon for aside on larger screens */
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Additional adjustments for extra-large screens if needed */
+}
+
+
+@media only screen and (max-width: 749px) {
+  .button {
+    width: 150px;
+    height: 75px;
+    font-size: 14px;
+  }
+
+  .button:hover {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+/* Text size adjustment for larger screens */
+@media only screen and (min-width: 750px) and (max-width: 1023px) {
+  .button {
+    width: 175px;
+    height: 85px;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+
+/* Text size adjustment for extra-large screens */
+@media only screen and (min-width: 1024px) {
+  .button {
+    width: 200px;
+    height: 100px;
+    font-size: 18px;
+  }
+
+  .button:hover {
+    width: 300px;
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* Responsive styles for smaller screens */
+
+
+
+
+/*charts*/
+
+/* Adjust the width of specific charts */
+
+
+
+
+
+/* Small <= 768px */
+
+.animated-input {
+  width: 50%;
+  padding: 19px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #08314b;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  align-content: center
+}
+
+.animated-input:focus {
+  border-color: #555;
+}
+
+.submit-button {
+  background-color: #0a74c0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 4px;
+  align-content: center
+  
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+
